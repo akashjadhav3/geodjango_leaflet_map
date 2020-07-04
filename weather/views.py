@@ -7,11 +7,11 @@ import requests
 
 def cities_data(request):
     cities_as_geojson=serialize('geojson', Cities.objects.all())
-    a = json.loads(cities_as_geojson)
+    data_load_in_json = json.loads(cities_as_geojson)
     cities_with_lat_long = []
-    for i in a["features"]:
-        city = i["properties"]["name"]
-        long_lat = i["geometry"]["coordinates"]
+    for data_row in data_load_in_json["features"]:
+        city = data_row["properties"]["name"]
+        long_lat = data_row["geometry"]["coordinates"]
         long_lat = str(long_lat[1])+","+str(long_lat[0])
         get_data_requests = requests.get('https://api.weather.gov/points/{}'.format(long_lat))
         weather_details = json.loads(get_data_requests.content)
