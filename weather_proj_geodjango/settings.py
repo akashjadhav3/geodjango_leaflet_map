@@ -127,6 +127,16 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
+LEAFLET_CONFIG = {
+    'DEFAULT_CENTER': (40.422773,-103.914703), # SET DEFAULT PIN LOCATION
+    'DEFAULT_ZOOM':5,
+    'MAX_ZOOM':20,
+    'MIN_ZOOM':3,
+    'SCALE':'both',# KM or Miles option shows
+    'ATTRIBUTION_PREFIX':'Developed By Akash'
+}
+
+
 SERIALIZATION_MODULES = {
     "geojson": "django.contrib.gis.serializers.geojson", 
  }
