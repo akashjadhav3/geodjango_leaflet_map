@@ -1,8 +1,8 @@
 # geodjango_leaflet_map
 show weather forecast using geodjango, leafletjs and posgis using.
-* Install requirements for the project:
-for Linux 
-   sudo pip3 install -r requirements
+## Install requirements for the project:
+* for Linux 
+   ```sudo pip3 install -r requirements```
 for Windows
    sudo pip3 install -r requirements
    
