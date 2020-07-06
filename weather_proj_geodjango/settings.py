@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'django.contrib.gis'
     'weather',
     'leaflet',
     'djgeojson',
@@ -130,7 +129,7 @@ STATIC_URL = '/static/'
 
 LEAFLET_CONFIG = {
     'DEFAULT_CENTER': (40.422773,-103.914703), # SET DEFAULT PIN LOCATION
-    'DEFAULT_ZOOM':5,
+    'DEFAULT_ZOOM':4,
     'MAX_ZOOM':20,
     'MIN_ZOOM':3,
     'SCALE':'both',# KM or Miles option shows

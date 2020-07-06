@@ -7,7 +7,6 @@ class Cities(models.Model):
     name = models.CharField(max_length=20)
     location = gismodel.PointField(srid=4326)
     objects = GeoManager()
-
     def __str__(self):
         return self.name
     class Meta:
