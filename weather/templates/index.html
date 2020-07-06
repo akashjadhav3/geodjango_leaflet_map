@@ -11,13 +11,27 @@
 
     {% leaflet_map "main" callback="ourfunction"%}
     <script>
-        function ourfunction(map, options){
+
+      function ourfunction(map, options){
             var ourdata = "{% url 'data' %}"
-            alert(ourdata)
             $.getJSON(ourdata, function(data){
                 L.geoJson(data).addTo(map);
-            })
-        }
+                })
+
+            $.ajax({
+              url: "{% url 'forcast_data' %}",
+              dataType: 'json',
+              success: function(forcast_data){
+                       for (row_dict in forcast_data){
+                            var city=forcast_data[row_dict].city;
+                            var temp = forcast_data[row_dict].temperature;
+                            console.log(city+":"+temp)
+                            }
+                       }
+            });
+      }
+
+
     </script>
   </head>
   <body>
