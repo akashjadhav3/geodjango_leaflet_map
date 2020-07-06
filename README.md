@@ -1,5 +1,5 @@
 # geodjango_leaflet_map
-![GitHub Logo](/images/logo.png)
+![Image of Weather app](/weather_app_screenshot.png)
 show weather forecast using geodjango, leafletjs and posgis using.
 ### Install requirements for the project:
 - for Linux 
