@@ -1,0 +1,17 @@
+asgiref==3.2.10
+certifi==2020.6.20
+chardet==3.0.4
+Django==3.0.7
+django-cors-headers==3.4.0
+django-geojson==3.0.0
+-e git+https://github.com/makinacorpus/django-leaflet.git@581853a47d1c5da02b55c931082ac80b5b68e437#egg=django_leaflet
+geojson==2.5.0
+idna==2.9
+jsonfield==3.1.0
+pkg-resources==0.0.0
+psycopg2-binary==2.8.5
+pytz==2020.1
+requests==2.24.0
+six==1.15.0
+sqlparse==0.3.1
+urllib3==1.25.9
