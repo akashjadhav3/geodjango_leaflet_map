@@ -25,7 +25,8 @@
                        for (row_dict in forcast_data){
                             var city=forcast_data[row_dict].city;
                             var temp = forcast_data[row_dict].temperature;
-                            console.log(city+":"+temp)
+                            var lat_long = forcast_data[row_dict].lat_log;
+                            console.log(city+":"+temp+":"+lat_long)
                             }
                        }
             });
