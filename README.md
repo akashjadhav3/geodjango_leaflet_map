@@ -1,4 +1,6 @@
 # geodjango_leaflet_map
+- Using weather.gov API show Weather Forcast in map using (python, django, Geodjango, leaflet.js, postgis)
+
 ![Image of Weather app](/weather_app_screenshot.png)
 show weather forecast using geodjango, leafletjs and posgis using.
 ### Install requirements for the project:
@@ -27,3 +29,8 @@ After Installing PostgreSql
 
 #### Run Project
 `python manage.py runserver`
+
+#### Adding City and Location
+- create superuser and login to Django Admin
+`python manage.py createsuperuser`
+- After that login and click Cities and add city and location
